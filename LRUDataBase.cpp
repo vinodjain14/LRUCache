@@ -62,7 +62,7 @@ public:
                           application restarts.
     */
     void setUpDB() {
-        //Future enhancement
+        //Future enhancement - this can be added whenever requirements are more clear.
     }
 
     /*
@@ -85,6 +85,8 @@ public:
     */
     void insertData(int id, string name) {
         char *query = NULL;
+
+	//currently here trying to update DB by deleting the existing record.
 
         asprintf(&query, "DELETE FROM EMPLOYEE WHERE ID='%d';", id);
         sqlite3_prepare(db, query, strlen(query), &stmt, NULL);

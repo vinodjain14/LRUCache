@@ -46,3 +46,6 @@ Dependecny: SQLite3 and g++
 $make
 $./LRUCache (it will create a LRU.db file to store the data on persistent and LRUCahe executable to run the application)
 
+$make clean - It removes all .o files, exe file and db file.
+ 
+
